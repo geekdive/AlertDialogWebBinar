@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:fontFamily="monospace"
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginBottom="15dp"
+        android:text="Biodata Apps"/>
+
+    <EditText
+        android:fontFamily="monospace"
+        android:layout_below="@id/txtTitle"
+        android:id="@+id/edtNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Lengkap"/>
+
+    <EditText
+        android:fontFamily="monospace"
+        android:layout_below="@+id/edtNama"
+        android:id="@+id/edtAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Alamat Lengkap"/>
+
+    <EditText
+        android:fontFamily="monospace"
+        android:layout_below="@+id/edtAlamat"
+        android:id="@+id/edtNoTelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="No. Telp"/>
+
+    <Button
+        android:fontFamily="monospace"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/edtNoTelp"
+        android:id="@+id/btnShowAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Munculkan Pesan"
+        android:backgroundTint="@color/btnALert"
+        android:textColor="#ffff"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:fontFamily="monospace"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/btnShowAlert"
+        android:id="@+id/btnExitAlert"
+        android:layout_below="@+id/edtNoTelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keluar Apps"
+        android:backgroundTint="@color/btnOut"
+        android:textColor="#ffff"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>
